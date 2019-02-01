@@ -1,0 +1,97 @@
+<!DOCTYPE html5>
+<html lang="en" class = "contact-page">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="product catalog, entertainment, mobile games, board games, console games">
+		<meta name = "destription" content = " company contact form "/>
+		<meta name = "author" content = "Michael Munatsi" />
+		<link rel="shortcut icon" href="img/inhollandlogo.ico" size = "16x16" type="image/x-icon">
+		<link rel="icon" href="img/inhollandlogo.ico" type="image/x-icon">
+		<link rel="icon" type="img/inhollandlogo.png" sizes="192x192"  href="img/inhollandlogo.png-192x192.png">
+		<link rel="icon" type="img/inhollandlogo.png" sizes="32x32" href="img/inhollandlogo.png-32x32.png">
+		<link rel="icon" type="img/inhollandlogo.png" sizes="96x96" href="img/inhollandlogo.png-96x96.png">
+		<link rel="icon" type="img/inhollandlogo.png" sizes="any" href="img/inhollandlogo.png-16x16.png">
+		<title>
+			contact form
+		</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<video autoplay loop muted>
+			<source src="movie/background.mp4" type="video/mp4" >
+			<source src="movie/background.ogg" type="video/ogg">
+		</video>
+		<header>
+				COMPANY NAME
+		</header>
+			<nav>
+				<h3>
+					<ul>
+						<li>
+							<a href = "index.html">
+								HOME
+							</a>
+							<a href = "http://www.blogger.com">
+								BLOG
+							</a> 
+							<a href = "contact.html">
+								CONTACT
+							</a>
+						</li>	
+					</ul>
+				</h3>
+			</nav>
+			<aside>
+				CONTACT
+			</aside>
+		</header>
+		<section>
+			<form action="nowhere.php" method="post">
+				<legend>
+					More information
+				</legend>
+			<fieldset id="select-topic">
+				<label>
+					Select topic
+				</label>
+			<select>
+				<option value="general">General inquiries</option>
+				<option value="press">Press relations</option>
+				<option value="recruitement">Recruitement</option>
+			</select>
+			</fieldset>
+			<fieldset class="contactFormFieldset">
+				<input
+					type="text"
+					name="contactFormName"
+					placeholder="Your name.."
+			/>
+			</fieldset>
+			<fieldset class="contactFormFieldset">
+				<input
+					type="email"
+					name="email"
+					placeholder="Your email.."
+				/>
+			</fieldset>
+			<fieldset class="contactFormFieldset">
+				<textarea
+					rows="7"
+					cols="40"
+					name="message"
+				placeholder="Write something.."
+				></textarea>
+			</fieldset>
+			<input
+				type="submit"
+				value="Submit"
+				id="sendBtn"
+			/>
+			</form>
+		</section>
+	<footer>
+		&copy; 2018 - Michael Munatsi - Inholland 
+	</footer>
+</body>
+</html>

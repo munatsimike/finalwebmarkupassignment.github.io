@@ -1,0 +1,294 @@
+/* remove all margins, padding and borders*/
+*	
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/*fallback font*/
+html
+{
+	font-family: "Times New Roman",Times, Serif;
+
+}
+/*body properties*/
+body	
+{	
+	background: url('../img/background.png') center center fixed; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:(0,0,0,0,1);
+	max-width: 60em;
+	margin: 0 auto;
+}
+	@media screen and (max-width: 60em)
+		{
+		body
+		    {
+		width:100%;
+		background-color:#F5F5F5;
+		    }
+		}
+		
+/*company logo properties*/
+header	
+{
+	font-size: 3em;
+	background:url('../img/companylogoBG.png') center center;	/*background image*/
+	background-size: cover;
+	text-align: center;
+	color: #FFF;
+	padding: 1em;
+}
+/*background vide0*/
+video
+{
+	
+	width: 100%;
+	
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
+
+}
+/*navigation menu properties*/
+nav
+{
+	background: #707070;	
+	text-align: center;			
+	font-size: 1.5em;
+	word-spacing: .7em;	   
+	padding: .2em;
+	border-color: #AAAAAA;
+	border-width: 0.05em;
+	border-style: solid;
+	border-bottom-color: #FFFFFF;
+	
+}
+a:active
+	{
+	color: #FF00FF; 	
+	}
+a:visited
+	{
+	color: #FFFFFF; 
+	}
+
+a:hover
+{
+	color: #0000FF;		 
+}
+/*navigation menu hyper links*/
+ul,a,li
+	{
+	list-style-type:none;
+	text-transform: uppercase;	
+	text-decoration: none;						
+	display: inline;	
+	font: 1em Arial;	
+	}
+/*Product catalog  and contact form heading properties */
+ aside
+{
+	background-color: #2699FB;
+	text-align: center;
+	color: #FFF;
+	padding: .1em;
+	font: 2.5em Arial;
+	border-color: #FFF;
+	border-width: 0.01em;
+	border-bottom: solid;
+	
+}
+
+/*index page flex box properties*/
+.index-page setion
+{
+	display: flex;
+	width:100%;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	justify-content:center;
+	overflow:hidden;
+}
+/*index page flex box container*/
+.flex-container2
+{
+	height: 25em;
+	position: relative;
+	margin: 0;
+	overflow:hidden;
+	
+}
+/*index page image properties*/
+.index-page img
+{
+	width: 100%;
+	margin :0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+/* index page headings*/
+.heading
+{
+	background-color: #2699FB;
+	font: 4em Arial;
+	color: #FFF;
+	margin:0;
+	text-align: center;
+	padding-right: 29%;
+	padding-left: 29%;
+}
+/* we are entertainment heading*/
+ #firstheading
+{
+	padding-left: 24%;
+	padding-right: 24%;
+
+}
+/*product catalog page flexbox*/
+.flex-container1
+{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #FFFFFF;
+	justify-content: center;
+	border-color: #AAAAAA;
+	border-width: 0.05em;
+	border-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color:#FFFFFF;
+	
+}
+/*flex box container*/
+.product-page article
+{
+background-color: #f1f1f1;
+width: 19.4em;
+margin:0.2em;
+line-height:15em;
+}
+
+/* image container*/
+.product-page p
+{
+	width:100%;
+	height: 28%;
+	position:relative;
+	overflow: hidden;
+}
+/* product page images*/
+.product-page img
+{
+	position:absolute;
+	width:100%;
+	min-height: 100%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	
+}
+
+fieldset > input
+{
+	width: 98%;
+	margin-bottom: 0.24em;
+}
+/* select topic pull down menu*/
+.contact-page select-topic
+{
+	padding-top: 0.26em;
+	font: 1em Arial;
+	
+}
+fieldset > textarea
+{
+	width: 98%;
+}
+
+fieldset > select
+{
+	width: 82%;
+	border-color: #AAA;
+	border-width: 0.06em;
+	border-style: solid;
+	float: right;
+	padding: 0.38em;
+	font: Arial;
+}
+/* contact form properties*/
+form	
+{
+	background:#F5F5F5;
+	border: 0.05em solid #AAAAAA;
+	padding: 2em;
+	border-top-color:F5F5F5;
+	border-bottom-color:F5F5F5;
+	
+}
+
+::placeholder
+{
+	color: AAAAAA;
+}
+label	
+{
+	padding: .5em;
+	width: 96%;
+	color:#AAAAAA;
+}
+fieldset
+{
+	border: 0.03em solid #000000;
+	background:#FFFFFF;
+	margin-left: 0.81em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: .2em;
+	font: 1em Arial;
+	
+}
+/* input text box*/
+input	
+,textarea
+{
+	width: 100%;
+	padding: .5em;
+	margin-bottom: 2em;
+	font: 1em Arial;
+}
+/* send button */
+#sendBtn
+{
+	border: 0;
+	color: #FFFFFF;
+	background-color: #2699FB;
+	cursor: pointer;
+	font: 1.5em Arial;
+	width: 99%;
+	margin-left: .5em;
+	padding: .3em;
+	margin-bottom: -1em;
+}
+.contact-page aside
+{
+	border-bottom-color: #AAAAAA;
+	border-width: 0.05em
+}
+/*footer properties*/
+footer	
+{	padding: 0.031em;
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: center;
+	font: 1.5em Arial;
+	border-color: #AAAAAA;
+	border-width: 0.05em;
+	border-style: solid;
+	border-top-color: #FFFFFF;
+	
+}
